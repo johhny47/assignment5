@@ -4,8 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment5</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+   <header>
+    <div class="nav-bar-container">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <a class="btn bg-[#b4f461]">Button</a>
+              </div>
+            <div class="navbar-center hidden lg:flex">
+              <div class="menu menu-horizontal px-1">
+                <img src="./assets/logo.png" alt="" srcset="">
+                <h1 class="lg:text-2xl mx-5 my-5">Donate Bangladesh</h1>
+                </div>
+            </div>
+            <div class="navbar-end flex gap-1 mx-5">
+                <img src="./assets/coin.png" alt="" srcset="">
+                <h2>500</h2>
+                <h2>BDT</h2>
+            </div>
+            
+          </div>
+    </div>
+   </header>
+   <main>
+    <!-- two button  -->
+       <div class="btn-container flex justify-center gap-5 mt-24">
+        <a class="btn px-12 bg-[#b4f461]">Donation</a>
+        <a class="btn px-12 "> History</a>
+       </div>
+       <!-- cart  -->
+       <div class="hero  ">
+        <div class="hero-content flex-col lg:flex-row">
+          <img
+            src="./assets/noakhali.png"
+            class="max-w-sm rounded-lg shadow-2xl" />
+          <div>
+            <div class="flex gap-1 mx-5">
+                <img src="./assets/coin.png" alt="" srcset="">
+                <h2 id="tk">500</h2>
+                <h2>BDT</h2>
+            </div>
+            <h1 class="text-3xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+            <p class="py-6">
+                The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+            </p>
+            <input id="input-donate-now" type="text" placeholder="Type here" class="input input-bordered w-full " />
+            <button id="donate-now" class="btn bg-[#b4f461] w-full mt-3">Donate Now</button>
+          </div>
+        </div>
+      </div>
+   </main>
+  <script src="./js/index.js"></script>  
+  <script src="./js/utility.js"></script>
 </body>
 </html>
