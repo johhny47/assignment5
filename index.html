@@ -7,12 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="">
-   <header class="  ">
-    <div class="nav-bar-container  ">
+<body class="max-w-screen-xl mx-auto">
+   <header class=" ">
+    <div class="nav-bar-container bg-[#f9f7f3]  ">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
-                <a class="btn bg-[#b4f461]">Button</a>
+                <a class="btn bg-[#b4f461]">Blog</a>
               </div>
             <div class="navbar-center hidden lg:flex">
               <div class="menu menu-horizontal px-1">
@@ -25,61 +25,77 @@
                 <h2 id="total-tk">500</h2>   
                 <h2>BDT</h2>
             </div>
+              </div>
               
             
-          </div>
-    </div>
-   </header>
-   <main class="">
+    </div> 
+
     <!-- two button  -->
-    <div class="btn-container flex justify-center gap-5 mt-24">
+    <div class="btn-container flex justify-center gap-5 mt-20">
         
-         <a id="donation-btn" class="btn px-12 bg-[#b4f461]">Donation</a>
-         <a id="history-btn" class="btn px-12 bg-[#b4f461]"> History</a>
+      <a id="donation-btn" class="btn px-12 bg-[#b4f461]">Donation</a>
+      <a id="history-btn" class="btn px-12 bg-[#b4f461]"> History</a>
+ 
+    </div>
+  
+  </header>
+   <main id="main" >
     
-       
-       </div>
-       <!-- cart  -->
-       <div class="lg:mx-auto">
-        <div id="hero-cart" class="hidden hero-content  flex-col lg:flex-row lg:w-full">
+       <!-- cart1  -->
+       <div class="mt-12 rounded-xl border-2 border-inherit">
+        <div id="hero-cart" class=" hero-content flex-col lg:flex-row ">
         
           <img
             src="./assets/noakhali.png"
             class="max-w-sm rounded-lg shadow-2xl" />
           <div>
-            <div class="flex gap-1 mx-5">
+            <div class="flex gap-1 mx-2 bg-gray-300 px-4 w-32 text-center rounded-sm">
                 <img src="./assets/coin.png" alt="" srcset="">
                 <h2 id="tk">500</h2>
                 <h2>BDT</h2>
             </div>
-            <h1 id="donate-noakhali" class="text-3xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+            <h1 id="donate-noakhali" class="text-2xl font-bold mt-2">Donate for Flood at Noakhali, Bangladesh</h1>
             <p class="py-6">
                 The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
             </p>
             <input id="input-donate-now" type="text" placeholder="Type here" class="input input-bordered w-full " />
          
-          <a id="donate-now" class="btn lg:w-full mt-3 bg-[#b4f461]">Donation</a>
+          <a id="donate-now" class="btn lg:w-full mt-3 bg-[#b4f461] relative">Donate NOw</a>
+
+         
           
     </div>
   </div>
+      <!-- history start -->
  
- <!-- history start -->
- 
-  <div id="hero-history" class="hidden mt-12  mx-96  grid grid-cols-1 gap-3">
+  <div id="hero-history" class="hidden my-8 mx-5 text-left grid grid-cols-1 gap-3 ">
   
   </div>
  
  <!-- history start -->
+      
+ 
  
 
          
 
-        </div>
-      </div>
-     
-   </main>
-   <script src="./js/modal.js"></script>
-  <script src="./js/index.js"></script>  
-  <script src="./js/utility.js"></script>
+  </div>
+  
+      
+      
+  </div>
+</main>
+ <!-- modal  -->
+ <div id="popup" class=" hidden w-60 h-60 rounded-xl border-2 border-inherit text-center absolute top-80 inset-2/4 z-999 ">
+  <h1 class="text-2xl mt-6 ">Congrates!</h1>
+  <img class="mx-24" src="./assets/coin.png" alt="">
+  <p class="text-sm">You Have Dinated For Humankind</p>
+  <h2>Successfully</h2>
+  <a id="ok-btn" class="btn  mt-3 bg-[#b4f369]">close confirmation</a>
+  </div>
+
+   <script src="./js/feature.js"></script>
+   <script src="./js/cart1.js"></script>  
+   <script src="./js/utility.js"></script>
 </body>
 </html>

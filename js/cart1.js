@@ -1,7 +1,15 @@
-
+// cart 1 
+const submitBtn= document.getElementById('donate-now')
+const popup = document.getElementById('popup')
+const main = document.getElementById('main')
 document.getElementById('donate-now').addEventListener('click',function(event)
 
 {     event.preventDefault();
+    // modal 
+   
+    popup.classList.remove('hidden')
+    main.classList.add('hidden')
+    //  donation 
     const totalBalance= getTextFieldValueById('total-tk');
     const totalBalanceNumber= parseFloat(totalBalance);
     const balance= getTextFieldValueById('tk');
@@ -27,36 +35,21 @@ document.getElementById('donate-now').addEventListener('click',function(event)
     const div =document.createElement('div')
     div.className="border-2 border-inherit p-5 rounded-xl"
     div.innerHTML =`
-          <p class='text-xl text-black font-extrabold'> ${addBalanceNumber}  ${place} </p>
-           <p >${new Date().toLocaleDateString()} </p>
+          <p class='text-xl text-black font-bold'> ${addBalanceNumber}  ${place} </p>
+          <p >${new Date().toLocaleDateString()} </p>
     `
     const hitoryHeading=document.getElementById('hero-history')
     hitoryHeading.appendChild(div)
     hitoryHeading.classList.add('')
+
+  
 })
 
-
-document.getElementById('donation-btn').addEventListener('click', function(event){
+document.getElementById('ok-btn').addEventListener('click',function(event) {
+   
     event.preventDefault();
-    document.getElementById('history-btn').classList.remove('bg-[#b4f461]')
-    document.getElementById('donation-btn').classList.add('bg-[#b4f461]')
-      document.getElementById('hero-history').classList.add('hidden');
-     document.getElementById('hero-cart').classList.remove('hidden')
-
-}
-);
-
-
-document.getElementById('history-btn').addEventListener('click', function(event){
-    event.preventDefault();
+  popup.classList.add('hidden')
+  main.classList.remove('hidden')
     
-     document.getElementById('history-btn').classList.add('bg-[#b4f461]')
-     document.getElementById('donation-btn').classList.remove('bg-[#b4f461]')
-      document.getElementById('hero-cart').classList.add('hidden');
-      document.getElementById('hero-history').classList.remove('hidden')
 
-}
-);
-
-
-
+})
