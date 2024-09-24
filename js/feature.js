@@ -27,7 +27,7 @@ document.getElementById('donation-btn').addEventListener('click', function(event
     
     document.getElementById('history-btn').classList.remove('bg-[#b4f461]')
     document.getElementById('donation-btn').classList.add('bg-[#b4f461]')
-    document.getElementById('hero-history2').classList.add('hidden');
+    document.getElementById('hero-history').classList.add('hidden');
     document.getElementById('hero-cart2').classList.remove('hidden')
 
 }
@@ -38,7 +38,29 @@ document.getElementById('history-btn').addEventListener('click', function(event)
     document.getElementById('history-btn').classList.add('bg-[#b4f461]')
     document.getElementById('donation-btn').classList.remove('bg-[#b4f461]')
     document.getElementById('hero-cart2').classList.add('hidden');
-    document.getElementById('hero-history2').classList.remove('hidden')
+    document.getElementById('hero-history').classList.remove('hidden')
+
+}
+);
+
+// cart3 
+document.getElementById('donation-btn').addEventListener('click', function(event){
+    event.preventDefault();
+    
+    document.getElementById('history-btn').classList.remove('bg-[#b4f461]')
+    document.getElementById('donation-btn').classList.add('bg-[#b4f461]')
+    document.getElementById('hero-history').classList.add('hidden');
+    document.getElementById('hero-cart3').classList.remove('hidden')
+
+}
+);
+document.getElementById('history-btn').addEventListener('click', function(event){
+    event.preventDefault();
+    
+    document.getElementById('history-btn').classList.add('bg-[#b4f461]')
+    document.getElementById('donation-btn').classList.remove('bg-[#b4f461]')
+    document.getElementById('hero-cart3').classList.add('hidden');
+    document.getElementById('hero-history').classList.remove('hidden')
 
 }
 );

@@ -1,42 +1,43 @@
-// cart 2 
-const submitBtn2= document.getElementById('donate-now2')
+// cart 1 
+const submitBtn3= document.getElementById('donate-now3')
 // const popup = document.getElementById('popup')
 // const main = document.getElementById('main')
-document.getElementById('donate-now2').addEventListener('click',function(event)
+document.getElementById('donate-now3').addEventListener('click',function(event)
 
 {     event.preventDefault();
     // modal 
    
     popup.classList.remove('hidden')
     main.classList.add('hidden')
-    //  donation 
+    // //  donation 
+   
     const totalBalance= getTextFieldValueById('total-tk');
     const totalBalanceNumber= parseFloat(totalBalance);
-    const balance2= getTextFieldValueById('tk2');
-    const balanceNumber2= parseFloat(balance2);
-    const addbalance2= getInputFieldValueById('input-donate-now2');
-    const addBalanceNumber2=parseFloat(addbalance2);
+    const balance3= getTextFieldValueById('tk3');
+    const balanceNumber3= parseFloat(balance3);
+    const addbalance3= getInputFieldValueById('input-donate-now3');
+    const addBalanceNumber3=parseFloat(addbalance3);
     
-    if(addBalanceNumber2 > 0){
-      const  newBlance2 = balanceNumber2+addBalanceNumber2;
-      console.log(newBlance2 )
-        document.getElementById('tk2').innerText = newBlance2 ;
+    if(addBalanceNumber3 > 0){
+      const  newBlance3 = balanceNumber3+addBalanceNumber3;
+      console.log(newBlance3 )
+        document.getElementById('tk3').innerText = newBlance3 ;
        
         
     }
     else{
         alert('give an integer number')
     }
-    const  newtotalBalance = totalBalanceNumber - addBalanceNumber2 ;
+    const  newtotalBalance = totalBalanceNumber - addBalanceNumber3 ;
     document.getElementById('total-tk').innerText = newtotalBalance ;
 
 
     // history
-    const place2 = getTextFieldValueById('donate-feni')
+    const place3 = getTextFieldValueById('donate-qouta')
     const div =document.createElement('div')
-    div.className="border-2 border-inherit p-5 rounded-xl "
+    div.className="border-2 border-inherit p-5 rounded-xl"
     div.innerHTML =`
-          <p class='text-xl text-black font-bold'> ${addBalanceNumber2}  ${place2} </p>
+          <p class='text-xl text-black font-bold'> ${addBalanceNumber3}  ${place3} </p>
           <p >${new Date().toLocaleDateString()} </p>
     `
     const hitoryHeading=document.getElementById('hero-history')
