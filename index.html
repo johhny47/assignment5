@@ -8,42 +8,45 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="max-w-screen-xl mx-auto">
-   <header class=" ">
-    <div class="nav-bar-container bg-[#f9f7f3]  ">
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-                <a class="btn bg-[#b4f461]">Blog</a>
-              </div>
-            <div class="navbar-center hidden lg:flex">
-              <div class="menu menu-horizontal px-1">
-                <img src="./assets/logo.png" alt="" srcset="">
-                <h1 class="lg:text-2xl mx-5 my-5">Donate Bangladesh</h1>
-                </div>
+   <header class="sticky top-0 z-50 ">
+   
+    <div class="nav-bar-container bg-stone-200  ">
+      <div class="navbar bg-base-100 bg-[#f9f7f3] ">
+          <div class="navbar-start">
+              <a id="blog-btn" class="btn bg-[#b4f461]">Blog</a>
             </div>
-            <div class="navbar-end flex gap-1 mx-5">
-                <img src="./assets/coin.png" alt="" srcset="">
-                <h2 id="total-tk">500</h2>   
-                <h2>BDT</h2>
-            </div>
+          <div class="navbar-center hidden lg:flex">
+            <div class="menu menu-horizontal px-1">
+              <img src="./assets/logo.png" alt="" srcset="">
+              <h1 class="lg:text-2xl mx-5 my-5">Donate Bangladesh</h1>
               </div>
-              
-            
-    </div> 
+          </div>
+          <div class="navbar-end flex gap-1 mx-5">
+              <img src="./assets/coin.png" alt="" srcset="">
+              <h2 id="total-tk">500</h2>   
+              <h2>BDT</h2>
+          </div>
+            </div>
+            <!-- two button  -->
+<div class="btn-container flex justify-center gap-5 mt-16 pb-4">
+    
+  <a id="donation-btn" class="btn px-12 bg-[#b4f461]">Donation</a>
+  <a id="history-btn" class="btn px-12 bg-[#b4f461]"> History</a>
 
-    <!-- two button  -->
-    <div class="btn-container flex justify-center gap-5 mt-20">
-        
-      <a id="donation-btn" class="btn px-12 bg-[#b4f461]">Donation</a>
-      <a id="history-btn" class="btn px-12 bg-[#b4f461]"> History</a>
- 
+            
+          
+  </div> 
     </div>
-  
-  </header>
+</header>
+</div>
+
+
+</div>
    <main id="main" >
     
        <!-- cart1  -->
-       <div class="mt-12 rounded-xl border-2 border-inherit">
-        <div id="hero-cart" class=" hero-content flex-col lg:flex-row ">
+       <div>
+        <div id="hero-cart" class="mt-12 p-8 rounded-xl border-2 border-inherit hero-content flex-col lg:flex-row ">
         
           <img
             src="./assets/noakhali.png"
@@ -77,8 +80,8 @@
 </div>
 <!-- cart2 -->
  
-  <div class="mt-12 rounded-xl border-2 border-inherit">
-    <div id="hero-cart2" class=" hero-content flex-col lg:flex-row ">
+  <div>
+    <div id="hero-cart2" class="mt-12 p-8 rounded-xl border-2 border-inherit hero-content flex-col lg:flex-row ">
     
       <img
         src="./assets/feni.png"
@@ -107,8 +110,8 @@
  
 <!-- cart3 -->
  
-<div class="mt-12 rounded-xl border-2 border-inherit">
-  <div id="hero-cart3" class=" hero-content flex-col lg:flex-row ">
+<div>
+  <div id="hero-cart3" class="mt-12 p-8 rounded-xl border-2 border-inherit hero-content flex-col lg:flex-row ">
   
     <img
       src="./assets/quota-protest.png"
@@ -152,6 +155,7 @@
    <script src="./js/cart1.js"></script> 
    <script src="./js/cart2.js"></script> 
    <script src="./js/cart3.js"></script> 
+   <script src="./js/blog.js"></script>
    <script src="./js/utility.js"></script>
 </body>
 </html>
