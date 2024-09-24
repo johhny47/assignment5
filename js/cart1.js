@@ -9,7 +9,7 @@ document.getElementById('donate-now').addEventListener('click',function(event)
     // modal 
    
     popup.classList.remove('hidden')
-    main.classList.add('hidden')
+   
     //  donation 
     const totalBalance= getTextFieldValueById('total-tk');
     const totalBalanceNumber= parseFloat(totalBalance);
@@ -50,7 +50,7 @@ document.getElementById('ok-btn').addEventListener('click',function(event) {
    
     event.preventDefault();
   popup.classList.add('hidden')
-  main.classList.remove('hidden')
+  
     
 
 })

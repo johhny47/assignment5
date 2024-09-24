@@ -68,7 +68,7 @@ document.getElementById('history-btn').addEventListener('click', function(event)
 // blog 
 document.getElementById('blog-btn').addEventListener('click',function() {
    
-    console.log("hi")
+   
   window.location.href='../blog.html'
 
 });

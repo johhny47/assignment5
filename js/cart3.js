@@ -1,14 +1,13 @@
-// cart 1 
+// cart 3 
 const submitBtn3= document.getElementById('donate-now3')
-// const popup = document.getElementById('popup')
-// const main = document.getElementById('main')
+
 document.getElementById('donate-now3').addEventListener('click',function(event)
 
 {     event.preventDefault();
     // modal 
    
     popup.classList.remove('hidden')
-    main.classList.add('hidden')
+   
     // //  donation 
    
     const totalBalance= getTextFieldValueById('total-tk');
@@ -51,7 +50,7 @@ document.getElementById('ok-btn').addEventListener('click',function(event) {
    
     event.preventDefault();
   popup.classList.add('hidden')
-  main.classList.remove('hidden')
+ 
     
 
 })

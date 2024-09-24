@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="max-w-screen-xl mx-auto">
+<body class="max-w-screen-xl mx-auto relative">
    <header class="sticky top-0 z-50 ">
    
     <div class="nav-bar-container bg-stone-200  ">
@@ -42,7 +42,7 @@
 
 
 </div>
-   <main id="main" >
+   <main id="main">
     
        <!-- cart1  -->
        <div>
@@ -63,7 +63,7 @@
             </p>
             <input id="input-donate-now" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
          
-          <a id="donate-now" class="btn lg:w-full mt-3 bg-[#b4f461] relative">Donate Now</a>
+          <a id="donate-now" class="btn lg:w-full mt-3 bg-[#b4f461] ">Donate Now</a>
 
          
           
@@ -98,7 +98,7 @@
         </p>
         <input id="input-donate-now2" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
      
-      <a id="donate-now2" class="btn lg:w-full mt-3 bg-[#b4f461] relative">Donate Now</a>
+      <a id="donate-now2" class="btn lg:w-full mt-3 bg-[#b4f461] ">Donate Now</a>
 
      
       
@@ -128,7 +128,7 @@
       </p>
       <input id="input-donate-now3" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
    
-    <a id="donate-now3" class="btn lg:w-full mt-3 bg-[#b4f461] relative">Donate Now</a>
+    <a id="donate-now3" class="btn lg:w-full mt-3 bg-[#b4f461] ">Donate Now</a>
 
    
     
@@ -143,9 +143,9 @@
   
 </main>
  <!-- modal  -->
- <div id="popup" class="hidden w-60 h-60 rounded-xl border-2 border-inherit text-center absolute top-80  right-[18%]  lg:right-[43%]   ">
+ <div id="popup" class="hidden  bg-zinc-100 w-80 h-60 lg:w-96 lg:h-60 rounded-xl border-2 border-inherit text-center fixed z-999 top-60 lg:top-80  left-[10%]  lg:right-[35%]   ">
   <h1 class="text-2xl mt-6 ">Congrates!</h1>
-  <img class="mx-24" src="./assets/coin.png" alt="">
+  <img class="mx-[45%]" src="./assets/coin.png" alt="">
   <p class="text-sm">You Have Dinated For Humankind</p>
   <h2>Successfully</h2>
   <a id="ok-btn" class="btn  mt-3 bg-[#b4f369]">close confirmation</a>
