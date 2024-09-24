@@ -65,13 +65,13 @@ document.getElementById('history-btn').addEventListener('click', function(event)
 }
 );
 
+
 // blog 
 document.getElementById('blog-btn').addEventListener('click',function() {
    
    
-  window.location.href='../blogs.html'
-
-});
-
-
+    window.location.href='../blogs.html'
+  
+  });
+  
 
